@@ -1,0 +1,55 @@
+.node rect {
+    fill: #ddd;
+}
+
+.node text {
+    font: 12px sans-serif;
+
+
+}
+
+.node tspan:last-child {
+    font-size: 9px;
+    fill-opacity: 0.8;
+
+}
+
+.node--internal text {
+    font-weight: bold;
+
+}
+
+.node--leaf rect {
+    fill-opacity: 0.6;
+}
+
+.one-to-three{
+    margin:60px auto;
+}
+.one-title{
+    text-align: center;
+
+    margin:5px auto;
+}
+.data{
+    width: 1000px;
+    height: 300px;
+    margin:10px auto;
+}
+.work{
+    height:100px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.work-text .work-text{
+    position: relative;
+    text-align: center;
+}
+.Collections{
+    margin: 0 0%;
+    text-align: center;
+}
+.addNewVote{
+    text-align: center;
+}

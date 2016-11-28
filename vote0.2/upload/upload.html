@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>修改或上傳</title>
+
+      <script  src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/prefixfree.min.js"></script>
+      <script type="text/javascript" src="js/jquery.transition.js"></script>
+  </head>
+
+  <body class="">
+
+
+    <div class="login ">
+	<h1>上傳</h1>
+    <form method="post" action="#" class="animsition-link">
+        學年度<input type="text" name="u" readonly="readonly" value="這是不能修改的88年">
+        指導老師<input type="text" name="u" readonly="readonly" value="這是不能修改的老師">
+        檔案確認狀態<input type="text" name="u" readonly="readonly" value="系統確認交給你ㄌ一樣使用者不能修改">
+        檔案上傳<input name="up_file" type="file" size="20">
+        專題類型<br>
+        <input type="checkbox" class="checkbox" value="電子商務">電子商務
+        <input type="checkbox" class="checkbox" value="資訊技術">資訊技術
+        <input type="checkbox" class="checkbox" value="知識管理">知識管理
+        <input type="checkbox" class="checkbox" value="行動應用">行動應用
+        <input type="checkbox" class="checkbox" value="其他">其他
+        <input class="att_other_text " type="text" size="6">
+
+        專題學生<input type="text" name="u" readonly="readonly" value="這是不能修改的024084 康皓">
+        專題名稱<input type="text" name="u" placeholder="輸入專題名稱" required="required" />
+        Youtube影片網址<input type="text" name="u" placeholder=" Youtube影片網址" required="required" />
+        備註(由系辦填寫)<input type="text" name="u" readonly="readonly" value="不能改的系辦備註">
+        <br/>
+        摘要(至少需填150字)
+        <textarea name="digest" cols="60" rows="15" style="margin: 0px; height: 100px; width: 100%;"></textarea>
+        <button type="submit" class="btn btn-primary btn-block btn-large ">上傳</button>
+    </form>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<!-- CDN jquary  -->
+<script  src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+<!-- 最新編譯和最佳化的 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<!-- 選擇性佈景主題 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<!-- 最新編譯和最佳化的 JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- CDN jquary  -->
+<!--D3JS -->
+<script type="text/javascript" src="//d3js.org/d3.v4.0.0-alpha.35.min.js"></script>
+<!--D3JS  over-->
+<!-- 康皓寫的 CSS + JS -->
+<script src="./js/index.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<!-- 康皓寫的 CSS + JS -->
+<head>
+    <title>
+        想要的title
+    </title>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">NKFUST|MIS|Vote</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a  href="#" onclick="document.getElementById('id01').style.display='block'" >登入</a></li>
+                <li><a href="#" class="animsition-link">登出</a></li>
+                <li><a href="./upload.html" class="animsition-link">上傳/修改</a></li>
+                <li><a href="./admin.html" class="animsition-link">管理員/教授按鈕(儀錶板)</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能列<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./StartOrEndVote.html">新增/結束投票</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="one-to-three">
+    <div class="one-title">
+        <h1>
+            前三名票數
+        </h1>
+    </div>
+    <div class="data">
+        <svg width="1000" height="300" class="svg"></svg>
+        <!-- 資料視覺化-->
+        <script src="./js/data.js"></script>
+    </div>
+    </div>
+<div id="collections" class="Collections">
+    <h1>所有組別</h1>
+    <div class="work col-md-4">
+            <div class="work-title">
+                <h3>聽說我是第10組</h3>
+            </div>
+            <div class="work-text">
+              票數:10張
+            </div>
+    </div>
+    <div class="work col-md-4">
+        <div class="work-title">
+            <h3>聽說我是第10組</h3>
+        </div>
+        <div class="work-text">
+            票數:10張
+        </div>
+    </div>
+    <div class="work col-md-4">
+        <div class="work-title">
+            <h3>聽說我是第10組</h3>
+        </div>
+        <div class="work-text">
+            票數:10張
+        </div>
+    </div>
+    <div class="work col-md-4">
+        <div class="work-title">
+            <h3>聽說我是第10組</h3>
+        </div>
+        <div class="work-text">
+            票數:10張
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<!-- CDN jquary  -->
+<script  src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+<!-- 最新編譯和最佳化的 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<!-- 選擇性佈景主題 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<!-- 最新編譯和最佳化的 JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<!-- CDN jquary  -->
+
+<!-- 康皓寫的 CSS + JS -->
+<script src="./js/index.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<!-- 康皓寫的 CSS + JS -->
+<head>
+    <title>
+        想要的title
+    </title>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">NKFUST|MIS|Vote</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a  href="#" onclick="document.getElementById('id01').style.display='block'" >登入</a></li>
+                <li><a href="#" class="animsition-link">登出</a></li>
+                <li><a href="./upload.html" class="animsition-link">上傳/修改</a></li>
+                <li><a href="./admin.html" class="animsition-link">管理員/教授按鈕(儀錶板)</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">功能列<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./StartOrEndVote.html">新增/結束投票</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="one-to-three">
+    <h1 class="addNewVote">新增投票</h1>
+    <div class="addNewVote">
+        <form action="#" method="post">
+            投票標題:
+            <input type="text"  placeholder="EX:第XX屆專題投票" required="required" />
+            開始日期:
+            <input   type="date" >
+            結束日期:
+            <input   type="date" >
+            限制投票數目:
+            <input  type="text"  onkeyup="value=value.replace(/[^\d]/g,'') " >
+            <br>
+            投票詳細規則:
+            <br>
+            <textarea  placeholder="以下為範例:
+            參加方式與規則
+於票選期間，每人每日限投1次，每次可投至多5件作品。可選擇以FB帳號或是Email登入投票。
+票選入圍作品即可參加抽獎，每票選1件作品即有1次抽獎機會，惟每人僅限中獎1次。如有疑似重複得獎，主辦單位得要求確認身分，若參加者無法配合，主辦單位有權取消其得獎資格。
+得獎名單將於9月22日公布於活動官網，並透過E-mail或電話通知得獎者。
+抽獎獎項：
+民眾投票參加獎：
+
+凡參加投票者皆可參與抽獎Panasocic42吋LED電視，2名。
+最高人氣獎：
+凡獲得最高票數之入圍作品作者，即可獲得Panasocic42吋LED電視，1名。
+抽獎日期及獎品寄送：
+104年9月21日下午02:00抽獎並公告於活動網站，抽獎過程將運用Youtube及Livehouse.in同步直播於活動官網首頁。
+得獎公告後，將於9月25日前通知得獎者，並於得獎者提供個人資料後10個工作天內寄送完畢。票選抽獎活動獎品一律貨運寄送，如於9月25日前仍無法聯絡上得獎者，或得獎者於9月30日前未提供個人資料，視同放棄中獎權利，並由主辦單位依序遞補得獎者。不接受開立扣繳憑單者，亦同。中獎獎項不得轉換、轉讓或折換現金，獎品經兌換後不得退還。
+公平票選機制
+凡登入票選民眾，網站將記錄相關認證帳號與投票紀錄，預防單一民眾進行灌票情事。凡參加網路票選者有下列情形之一，並經主辦單位調查後確認有妨礙網路票選活動之公平與公正性者，主辦單位有權取消或重新計算投票數：
+利用電腦、網路之漏洞（如：攻擊點擊人氣程式、登入認證及其他可認定相似之攔截行為等）以及利用非本活動規定之投票行為進行人氣虛報。
+利用不正當之行為（如：侵入資料庫、改封包及其他可認定相似之駭客行為等）竄改投票數。" required="required" style=" height:400px; width: 80%;"></textarea>
+           <br>
+            <input type="submit" class="btn" value="提交">
+        </form>
+        <h1 style="color: #670d10">以下按鈕將會強制結該束投票並且計算分數</h1>
+
+
+    </div>
+    <div id="collections" class="Collections">
+
+        <div class="work col-md-4">
+            <div class="work-title">
+                <form action="###" method="post">
+                    <h3>YY投票</h3><input type="submit" class="btn" value="確認結束">
+                </form>
+            </div>
+        </div>
+        <div class="work col-md-4">
+            <div class="work-title">
+                <form action="###" method="post">
+                    <h3>XX投票</h3><input type="submit" class="btn" value="確認結束">
+                </form>
+            </div>
+        </div>
+        <div class="work col-md-4">
+            <div class="work-title">
+                <form action="###" method="post">
+                    <h3>ZZ投票</h3><input type="submit" class="btn" value="確認結束">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
